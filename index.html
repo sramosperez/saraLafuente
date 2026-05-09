@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sitio oficial de Sara Lafuente.">
+    <title>Sara Lafuente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <p class="brand">Sara Lafuente</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="author-name">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1 id="author-name">Sara Lafuente</h1>
+                    <div class="section-line" aria-hidden="true"></div>
+                    <p>
+                        Escribo relatos cortos sobre lo que no se cuenta.<br>
+                        Sobre mujeres que nadie mira dos veces.<br>
+                        Sobre noches que no terminan bien.
+                    </p>
+                    <a class="hero-cta js-contact" href="javascript:void(0)" onclick="contactar()">Contacto</a>
+                </div>
+                <figure class="hero-photo">
+                    <img src="autora.jpg" alt="Sara Lafuente sosteniendo su libro Programada">
+                </figure>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container about-grid">
+                <article>
+                    <h2>Sobre mi</h2>
+                    <div class="section-line" aria-hidden="true"></div>
+                    <p>
+                        Me llamo Sara Lafuente.
+                        Escribo relatos cortos con una mirada intima, directa y sin adornos.
+                    </p>
+                    <p>
+                        Me interesan las historias que pasan desapercibidas:
+                        las que incomodan, las que duelen, las que nadie quiere mirar demasiado tiempo.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>Programada</h2>
+                    <div class="section-line" aria-hidden="true"></div>
+                    <p>
+                        Mi primer libro de relatos cortos.
+                        Una mirada a la mujer en la sociedad actual.
+                    </p>
+                    <p>
+                        Programada es autobiografico, es denuncia, es verdad.
+                    </p>
+
+                </article>
+
+                <figure class="book-photo">
+                    <img src="libro.jpg" alt="Portada del libro Programada sobre una mesa de madera">
+                </figure>
+            </div>
+        </section>
+
+        <section class="quote-strip" aria-label="Frase destacada">
+            <p>Hay historias que no cambian el mundo.<br>Pero tampoco te dejan igual.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="brand">Sara Lafuente</p>
+                <p class="copyright">© 2026 Todos los derechos reservados.</p>
+            </div>
+            <nav class="social" aria-label="Redes y contacto">
+                <a href="https://instagram.com/vivirparacontarlo___" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram" class="social-link">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                <a class="js-contact social-link" href="javascript:void(0)" onclick="contactar()" aria-label="Email">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Contacto</span>
+                </a>
+            </nav>
+            <div class="footer-spacer" aria-hidden="true"></div>
+        </div>
+    </footer>
+
+    <script>
+        function contactar() {
+            const parte1 = "sara_lafuente";
+            const parte2 = "yahoo";
+            const parte3 = "es";
+
+            window.location.href = `mailto:${parte1}@${parte2}.${parte3}`;
+        }
+    </script>
+</body>
+
+</html>
